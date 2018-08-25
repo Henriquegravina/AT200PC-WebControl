@@ -7,3 +7,10 @@ AT200PC is a HF antenna auto tuner that was made to be controled by a RS232 inte
 todo list:
  1 - Better web interface
  2 - Configure wifi via web
+
+Libraries:
+https://github.com/Henriquegravina/AT200PC-Arduino
+https://github.com/me-no-dev/ESPAsyncWebServer
+
+Get a lot os ideas from:
+https://github.com/xoseperez/espurna
