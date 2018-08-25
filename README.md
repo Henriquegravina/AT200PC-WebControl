@@ -1,10 +1,9 @@
-# At200pc-wifi_remote_control
+# AT200PC WebControl
 
-An Wifi/Web remote control to LDG AT200pc made with Esp8266 and a ttl->rs232 circuit.
+This project is an remote control to LDG electronics AT200PC auto tuner.
 
-Alredy working on my station ( PU3IKE )
+AT200PC is a HF antenna auto tuner that was made to be controled by a RS232 interface with a normal PC. But in my station the tuner was instaled on a external box to be closer to the antenna. Now with this software and hardware I can control the tuner via any web browser, and also read the tuner outputs like power ans SWR.
 
-Todo:
-1 - Embedded the index.html
-2 - Css code to look like ldg pannels.
-
+todo list:
+ 1 - Better web interface
+ 2 - Configure wifi via web
