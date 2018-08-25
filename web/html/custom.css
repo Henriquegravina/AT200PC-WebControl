@@ -1,0 +1,47 @@
+body {
+    background-color: grey;
+}
+h1 {
+    color: maroon;
+    margin-left: 40px;
+} 
+#PWR_progress {
+    float: left;
+    width: 100%;
+    background-color: grey;
+}
+#PWR_bar {
+    width: 1%;
+    height: 30px;
+    background-color: red;
+}
+#SWR_progress {
+    float: left;
+    width: 100%;
+    background-color: grey;
+}
+#SWR_bar {
+    width: 1%;
+    height: 30px;
+    background-color: blue;
+}
+#IND_progress {
+    float: left;
+    width: 100%;
+    background-color: grey;
+}
+#IND_bar {
+    width: 1%;
+    height: 30px;
+    background-color: green;
+}
+#CAP_progress {
+    float: left;
+    width: 100%;
+    background-color: grey;
+}
+#CAP_bar {
+    width: 1%;
+    height: 30px;
+    background-color: yellow;
+}

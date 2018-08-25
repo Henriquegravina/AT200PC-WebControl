@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>LDG200PC WEB</title>
+    <!-- shortcut::html/favicon.ico -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- build:css style.css -->
+    <link rel="stylesheet" href="custom.css" />
+    <!-- endbuild -->
+</head>
+<body  onload="showHintAnt('CMD_ANTENNA');showHintSwrT('CMD_SWRTHRESH');all_values();">
+<!-- content -->
+<h2>LDG At200pc</h2>
+<div name="antenna">
+<button name="button" value="REQ_ANT1" onclick="showHintAnt(this.value)">ANT 1</button>
+<button name="button" value="REQ_ANT2" onclick="showHintAnt(this.value)">ANT 2</button>
+<p>Selected: <span id="txtHint_antenna"></span></p> 
+</div>
+<div name="swr">
+<button name="button" value="REQ_SWR11" onclick="showHintSwrT(this.value)">SWR 1.1</button>
+<button name="button" value="REQ_SWR13" onclick="showHintSwrT(this.value)">SWR 1.3</button>
+<button name="button" value="REQ_SWR15" onclick="showHintSwrT(this.value)">SWR 1.5</button>
+<button name="button" value="REQ_SWR17" onclick="showHintSwrT(this.value)">SWR 1.7</button>
+<button name="button" value="REQ_SWR20" onclick="showHintSwrT(this.value)">SWR 2.0</button>
+<button name="button" value="REQ_SWR25" onclick="showHintSwrT(this.value)">SWR 2.5</button>
+<button name="button" value="REQ_SWR30" onclick="showHintSwrT(this.value)">SWR 3.0</button>
+<p>SWR treshold: <span id="txtHint_swr"></span></p> 
+</div>
+<div name="panel" class="panel">
+    <div  name="IND" class="IND">
+        <button name="button" value="REQ_INDUP"    onclick="all_values(this.value)">IND UP</button>
+        <button name="button" value="REQ_INDDN"    onclick="all_values(this.value)">IND DN</button>
+    </div>
+    <div  name="CAP" class="CAP">
+        <button name="button" value="REQ_CAPUP"    onclick="all_values(this.value)">CAP UP</button>
+        <button name="button" value="REQ_CAPDN"    onclick="all_values(this.value)">CAP DN</button>
+    </div>
+    <div name="TUNE" class="TUNE">
+        <button name="button" value="REQ_FULLTUNE" onclick="all_values(this.value)">TUNE</button>
+    </div>
+    <div name="bars" class="bars">
+        <div id="PWR_progress">PWR
+            <div id="PWR_bar"></div>
+        </div>
+        <div id="SWR_progress">SWR
+            <div id="SWR_bar"></div>
+        </div>
+        <div id="IND_progress">IND
+            <div id="IND_bar"></div>
+        </div>
+        <div id="CAP_progress">CAP
+            <div id="CAP_bar"></div>
+        </div>
+    </div>
+</div>
+<div name="at_information">
+<p>Json:</p>
+<div>SwrTreshold: <span id="swr_threshold"></span></div> 
+<div>HiLoZ: <span id="hilo_z_string"></span></div> 
+<div>Capacitor: <span id="capval_string"></span></div> 
+<div>Inductor: <span id="indval_string"></span></div> 
+<div>Operation: <span id="instandby_string"></span></div> 
+<div>Status: <span id="at_status_string"></span></div> 
+<div>Power: <span id="powerfwd_string"></span></div> 
+<div>Reverse: <span id="powerrev_string"></span></div> 
+<div>SWR: <span id="swr_string"></span></div> 
+<div>Live: <span id="live_update_string"></span></div> 
+<div>Freq: <span id="tx_frequency_string"></span></div> 
+</div>
+<!-- content -->
+</body>
+<!-- build:js script.js -->
+    <script src="custom.js"></script>
+<!-- endbuild -->
+</html>
